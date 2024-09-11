@@ -1,6 +1,6 @@
 {% set name = "xnvme" %}
 {% set libname = "libxnvme" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ libname|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "6d42d0bd7e6b395a37869a8713d138d332500f20ecc272ebf6789471026a7191"
+  sha256: "d951a3115f686956f5c6b839b390ffb50bb443f7711fe35f57a07f4d0667277f"
 
 build:
   skip: true  # [not linux]
@@ -16,15 +16,15 @@ build:
 
 requirements:
   build:
-  - {{ compiler('c') }}
-  - {{ stdlib('c') }}
-  - meson
-  - ninja
-  - pkg-config
+    - {{ compiler('c') }}
+    - {{ stdlib('c') }}
+    - meson
+    - ninja
+    - pkg-config
 
   host:
-  - libaio  # [linux]
-  - liburing  # [linux]
+    - libaio  # [linux]
+    - liburing  # [linux]
 
 about:
   home: https://xnvme.io/
