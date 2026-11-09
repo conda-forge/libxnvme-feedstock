@@ -20,11 +20,15 @@ requirements:
     - {{ stdlib('c') }}
     - meson
     - ninja
-    - pkg-config
+    - pkgconf
 
   host:
     - libaio  # [linux]
     - liburing  # [linux]
+
+test:
+  requires:
+    - pkgconf
 
 about:
   home: https://xnvme.io/
