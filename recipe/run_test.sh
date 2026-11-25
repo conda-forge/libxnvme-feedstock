@@ -5,5 +5,5 @@
 #
 set -e
 which xnvme
-xnvme library-info
+xnvme env library
 pkgconf xnvme --libs
