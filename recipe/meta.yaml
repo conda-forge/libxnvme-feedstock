@@ -37,6 +37,8 @@ about:
   license_family: BSD
   license_file:
     - LICENSE
+    - subprojects/upcie/LICENSE
+    - subprojects/ufuse/LICENSE
   doc_url: https://xnvme.io/
   dev_url: https://github.com/xnvme/xnvme
 
