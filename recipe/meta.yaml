@@ -1,6 +1,6 @@
 {% set name = "xnvme" %}
 {% set libname = "libxnvme" %}
-{% set version = "0.7.5" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ libname|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "d951a3115f686956f5c6b839b390ffb50bb443f7711fe35f57a07f4d0667277f"
+  sha256: "fc06ce2214bdd6143b4611b5923a9780bc4fe799b52e4a3c1c8cf594bff4dcee"
 
 build:
   skip: true  # [not linux]
-  number: 2
+  number: 0
 
 requirements:
   build:
